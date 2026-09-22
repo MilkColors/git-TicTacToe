@@ -1,8 +1,7 @@
 import org.junit.jupiter.api.Nested;
 
 public class TicTacToeTester {
-    public int row = 0;
-    public int col = 0;
+    public int empty = 0;
     public int player_X = 1;
     public int player_O = 2;
     public static void main(String[] args)
@@ -58,6 +57,61 @@ public class TicTacToeTester {
 
         }
         @Nested
-    public TicTacToeTester()
+        public class TicTacToeTester()
+        {
+            public void TicTacToeTester()
+            {
+                int[][] board = new int [3][3];
+                        for (int row=0; row < board.length; row++) {
+                            for (int col=0; col < board[row].length; col++)
+                            {
+                                board[row][col] = 3;
+                            }
+                        }
+            }
+        }
+        public int getCell(int row, int col)
+        {
 
+        }
+        public boolean placeMove(int row, int col)
+        {
+
+        }
+        public boolean isValidMove(int row, int col, int player)
+        {
+
+        }
+        public int checkRowWin(int row)
+        {
+
+        }
+        public int checkColWin(int col)
+        {
+
+        }
+        public int checkMainDiagonalWin()
+        {
+
+        }
+        public int checkAntiDiagonalWin()
+        {
+
+        }
+        public int checkWinner()
+        {
+
+        }
+        public boolean isFull()
+        {
+
+        }
+        public void displayBoard()
+        {
+
+        }
+        public void resetBoard()
+        {
+
+        }
 }
